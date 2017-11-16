@@ -3,6 +3,7 @@ package com.example.shailendra.speakup.Profile;
 import android.media.Image;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.design.widget.BottomNavigationView;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -12,6 +13,8 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.RelativeLayout;
 
+import com.example.shailendra.speakup.Helpers.BottomNavHelper;
+import com.example.shailendra.speakup.Home.HomeActivity;
 import com.example.shailendra.speakup.R;
 import com.example.shailendra.speakup.Utils.SecionsStatePagerAdapter;
 
@@ -36,6 +39,7 @@ public class AccountSettingsActivity extends AppCompatActivity {
       viewPager=findViewById(R.id.container);
       relativeLayout=findViewById(R.id.relLayout1);
       setupFragments();
+        setUpBottomNavigation();
 
 
 
@@ -86,7 +90,7 @@ public class AccountSettingsActivity extends AppCompatActivity {
 
 
     }
-private void setupFragments(){
+public void setupFragments(){
         adapter=new SecionsStatePagerAdapter(getSupportFragmentManager());
         adapter.addFragment(new EditProfileFragment(),getString(R.string.edit_profile_fragment));
         adapter.addFragment(new SignOutFragment(),getString(R.string.sign_out_fragment));
@@ -94,24 +98,26 @@ private void setupFragments(){
 
 }
 
-private void setViewPager(int fragmentNumber){
+private void setViewPager(int fragmentNumber) {
 
     relativeLayout.setVisibility(View.GONE);
     viewPager.setAdapter(adapter);
     viewPager.setCurrentItem(fragmentNumber);
 
 
+}
 
 
+    private void setUpBottomNavigation() {
 
 
+        BottomNavigationView bottomNavigationView = findViewById(R.id.bottomNavViewBar);
+        BottomNavHelper.removeShiftMode(bottomNavigationView);
+        BottomNavHelper.enableNavigation(AccountSettingsActivity.this, bottomNavigationView);
+
+    }
 
 
 
 }
 
-
-
-
-
-}

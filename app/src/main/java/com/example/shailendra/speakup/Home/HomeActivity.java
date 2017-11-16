@@ -11,6 +11,8 @@ import android.util.Log;
 import com.example.shailendra.speakup.Helpers.BottomNavHelper;
 import com.example.shailendra.speakup.R;
 import com.example.shailendra.speakup.Utils.SectionsPagerAdapter;
+import com.example.shailendra.speakup.Utils.UniversalImageLoader;
+import com.nostra13.universalimageloader.core.ImageLoader;
 
 /**
  * Created by shailendra on 11/14/17.
@@ -24,7 +26,7 @@ public class HomeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Log.i("meroinsta", "onCreate: home started");
         setUpBottomNavigation();
-
+initImageLoader();
         setUpViewPager();
 
     }
@@ -55,6 +57,14 @@ public class HomeActivity extends AppCompatActivity {
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottomNavViewBar);
         BottomNavHelper.removeShiftMode(bottomNavigationView);
         BottomNavHelper.enableNavigation(HomeActivity.this, bottomNavigationView);
+
+    }
+
+    public void initImageLoader() {
+
+        UniversalImageLoader imageLoader = new UniversalImageLoader(this);
+        ImageLoader.getInstance().init(imageLoader.getConfig());
+
 
     }
 

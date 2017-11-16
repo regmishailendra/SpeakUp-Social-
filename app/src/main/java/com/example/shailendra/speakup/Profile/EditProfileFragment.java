@@ -25,26 +25,35 @@ public class EditProfileFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_edit_profile, container, false);
         imageView = view.findViewById(R.id.profilePhoto);
-        initImageLoader();
+
+
         setProfileImage();
+
+        ImageView backArrow=view.findViewById(R.id.backArrow);
+        backArrow.setOnClickListener(
+                new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        getActivity().finish();
+                    }
+                }
+        );
+
+
+
 
 
         return view;
 
     }
 
-    public void initImageLoader() {
 
-        UniversalImageLoader imageLoader = new UniversalImageLoader(getActivity());
-        ImageLoader.getInstance().init(imageLoader.getConfig());
-
-
-    }
 
 
     private void setProfileImage() {
 
-        UniversalImageLoader.setImage("http://tctechcrunch2011.files.wordpress.com/2012/09/mark.jpeg",
+        UniversalImageLoader.setImage(
+                "http://tctechcrunch2011.files.wordpress.com/2012/09/mark.jpeg",
 
                 imageView, null, "");
 
