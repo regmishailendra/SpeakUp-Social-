@@ -1,0 +1,64 @@
+<merge xmlns:android.design="http://schemas.android.com/apk/res/android">
+
+
+    <android.support.design.widget.AppBarLayout
+        android.design:layout_width="match_parent"
+        android.design:layout_height="50dp"
+        android.design:background="@drawable/white_gray_bottom"
+
+        >
+
+        <android.support.v7.widget.Toolbar
+            android.design:id="@+id/profileToolBar"
+            android.design:layout_width="match_parent"
+            android.design:layout_height="wrap_content">
+
+            <RelativeLayout
+                android.design:layout_width="match_parent"
+                android.design:layout_height="match_parent">
+
+                <ImageView
+                    android.design:id="@+id/backArrow"
+                    android.design:layout_width="30dp"
+                    android.design:layout_height="30dp"
+                    android.design:layout_centerVertical="true"
+                    android.design:layout_marginEnd="20dp"
+                    android.design:layout_marginLeft="10dp"
+                    android.design:layout_marginRight="10dp"
+                    android.design:layout_marginStart="10dp"
+
+                    android.design:src="@drawable/ic_back_arrow" />
+
+                <TextView
+                    android.design:id="@+id/profilename"
+                    android.design:layout_width="wrap_content"
+                    android.design:layout_height="match_parent"
+                    android.design:layout_centerVertical="true"
+                    android.design:layout_toRightOf="@+id/backArrow"
+                    android.design:text="Edit Profile"
+                    android.design:textColor="#000000"
+                    android.design:gravity="center_vertical"
+                    android.design:textSize="20sp" />
+
+
+                <ImageView
+                    android.design:id="@+id/savechanges"
+                    android.design:layout_width="30dp"
+                    android.design:layout_height="30dp"
+                    android.design:layout_centerVertical="true"
+                    android.design:layout_marginEnd="20dp"
+                    android.design:layout_marginLeft="10dp"
+                    android.design:layout_marginRight="10dp"
+                    android.design:layout_marginStart="10dp"
+
+                    android.design:src="@drawable/ic_checkmark"
+                    android.design:layout_alignParentRight="true"
+                    />
+            </RelativeLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+
+    </android.support.design.widget.AppBarLayout>
+
+</merge>

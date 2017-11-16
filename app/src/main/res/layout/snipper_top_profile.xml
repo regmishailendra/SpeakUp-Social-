@@ -1,0 +1,118 @@
+<merge xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android.design="http://schemas.android.com/apk/res/android">
+
+
+    <LinearLayout
+        android.design:layout_width="match_parent"
+        android.design:layout_height="wrap_content"
+        android.design:orientation="vertical"
+        >
+
+    <LinearLayout
+        android.design:layout_width="match_parent"
+        android.design:layout_height="wrap_content"
+        android.design:layout_marginTop="30dp"
+        android.design:orientation="horizontal">
+
+<LinearLayout
+    android.design:layout_width="match_parent"
+    android.design:layout_height="wrap_content"
+    android.design:layout_weight="1"
+    android.design:orientation="vertical"
+    >
+
+
+        <TextView
+            android.design:id="@+id/tvposts"
+            android.design:layout_width="wrap_content"
+            android.design:layout_height="wrap_content"
+            android.design:text="18"
+            android.design:textColor="#000000"
+            android.design:textSize="18sp"
+
+            />
+
+        <TextView
+            android.design:id="@+id/textposts"
+            android.design:layout_width="wrap_content"
+            android.design:layout_height="wrap_content"
+            android.design:text="Posts"
+            android.design:textSize="18sp"
+/>
+    </LinearLayout>
+        <LinearLayout
+            android.design:layout_width="match_parent"
+            android.design:layout_height="wrap_content"
+            android.design:layout_weight="1"
+            android.design:orientation="vertical"
+            >
+
+            <TextView
+                android.design:id="@+id/tvfollowing"
+                android.design:layout_width="45dp"
+                android.design:layout_height="25dp"
+                android.design:text="300"
+                android.design:textColor="#000000"
+               android.design:gravity="center_horizontal"
+                android.design:textSize="18sp"/>
+
+            <TextView
+                android.design:id="@+id/following"
+                android.design:layout_width="wrap_content"
+                android.design:layout_height="wrap_content"
+                android.design:text="Following"
+                android.design:textSize="18sp"/>
+
+        </LinearLayout>
+    <LinearLayout
+        android.design:layout_width="match_parent"
+        android.design:layout_height="wrap_content"
+        android.design:layout_weight="1"
+        android.design:orientation="vertical"
+       android.design:gravity="right"
+
+
+        >
+
+
+    <TextView
+            android.design:id="@+id/tvfollowers"
+            android.design:layout_width="wrap_content"
+            android.design:layout_height="wrap_content"
+        android.design:gravity="center_horizontal"
+        android.design:text="200"
+            android.design:textColor="#000000"
+            android.design:textSize="18sp"
+android.design:layout_gravity="center_horizontal"
+        />
+
+
+        <TextView
+            android.design:id="@+id/followers"
+            android.design:layout_width="wrap_content"
+            android.design:layout_height="wrap_content"
+            android.design:text="Followers"
+            android.design:textSize="18sp"
+/>
+    </LinearLayout>
+
+
+
+    </LinearLayout>
+
+        <TextView
+            android.design:layout_gravity="center_horizontal"
+            android.design:id="@+id/tveditprofile"
+            android.design:layout_width="wrap_content"
+            android.design:layout_height="wrap_content"
+            android.design:text="Edit your Profile"
+            android.design:textColor="#000000"
+android.design:layout_marginTop="5dp"
+            android.design:padding="3dp"
+            android.design:background="#f2f2f2"
+            />
+    </LinearLayout>
+
+</merge>
+

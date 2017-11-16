@@ -1,0 +1,151 @@
+<merge xmlns:android.design="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+
+        android.design:layout_width="match_parent"
+        android.design:layout_height="match_parent">
+
+
+        <!-- top toolbar -->
+        <RelativeLayout
+            android.design:id="@+id/relLayout1"
+            android.design:layout_width="match_parent"
+            android.design:layout_height="50dp">
+
+            <include layout="@layout/snipper_top_profilebar" />
+
+
+        </RelativeLayout>
+        <!-- middle section -->
+
+        <RelativeLayout
+            android.design:layout_width="match_parent"
+            android.design:layout_height="wrap_content"
+            android.design:layout_below="@+id/relLayout1"
+            android.design:background="@drawable/white_gray_bottom">
+
+            <LinearLayout
+                android.design:id="@+id/linLayout"
+                android.design:layout_width="match_parent"
+                android.design:layout_height="wrap_content"
+                android.design:orientation="horizontal"
+                android.design:weightSum="100">
+
+                <RelativeLayout
+                    android.design:layout_width="0dp"
+                    android.design:layout_height="match_parent"
+                    android.design:layout_marginLeft="25dp"
+                    android.design:layout_marginStart="25dp"
+                    android.design:layout_weight="25">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android.design:layout_width="80dp"
+                        android.design:layout_height="80dp"
+                        android.design:layout_centerVertical="true"
+                        app:civ_border_width="2dp"
+                        app:civ_circle_background_color="#000000"
+
+
+                        />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android.design:layout_width="0dp"
+                    android.design:layout_height="match_parent"
+                    android.design:layout_weight="75"
+
+                    >
+
+                    <include layout="@layout/snipper_top_profile" />
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android.design:layout_width="match_parent"
+                android.design:layout_height="wrap_content"
+                android.design:layout_below="@id/linLayout"
+                android.design:orientation="vertical"
+                android.design:padding="20dp"
+                android.design:id="@+id/linLayout2"
+
+                >
+
+                <TextView
+                    android.design:id="@+id/displayName"
+                    android.design:layout_width="match_parent"
+                    android.design:layout_height="wrap_content"
+                    android.design:text="Name"
+                    android.design:textColor="#000000"
+                    android.design:textSize="16sp"
+                    android.design:textStyle="bold"
+
+                    />
+
+                <TextView
+                    android.design:id="@+id/description"
+                    android.design:layout_width="match_parent"
+                    android.design:layout_height="wrap_content"
+                    android.design:layout_marginTop="5dp"
+                    android.design:text="I like to build something great!"
+                    android.design:textColor="#000000"
+                    android.design:textSize="16sp" />
+
+                <TextView
+                    android.design:id="@+id/website"
+                    android.design:layout_width="match_parent"
+                    android.design:layout_height="wrap_content"
+                    android.design:layout_marginTop="5dp"
+                    android.design:text="https://www.ideadeu.herokuapp.com"
+                    android.design:textColor="#4740ac"
+                    android.design:textSize="16sp"
+
+                    />
+
+
+            </LinearLayout>
+
+<RelativeLayout
+    android.design:layout_width="match_parent"
+    android.design:layout_height="wrap_content"
+    android.design:id="@+id/relLayout3"
+   android.design:layout_marginBottom="50dp"
+    android.design:layout_below="@+id/linLayout2"
+
+
+    >
+<GridView
+    android.design:layout_width="match_parent"
+    android.design:layout_height="wrap_content"
+    android.design:id="@+id/gridView"
+    android.design:numColumns="3"
+    android.design:verticalSpacing="1dp"
+   android.design:horizontalSpacing="1dp"
+
+android.design:stretchMode="columnWidth"
+
+   android.design:gravity="center"
+    >
+
+</GridView>
+
+
+
+
+
+</RelativeLayout>
+
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</merge>

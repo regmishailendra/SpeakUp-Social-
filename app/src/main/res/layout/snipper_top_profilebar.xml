@@ -1,0 +1,50 @@
+<merge xmlns:android.design="http://schemas.android.com/apk/res/android">
+
+
+    <android.support.design.widget.AppBarLayout
+        android.design:layout_width="match_parent"
+        android.design:layout_height="50dp"
+        android.design:background="@drawable/white_gray_bottom"
+
+        >
+
+        <android.support.v7.widget.Toolbar
+            android.design:id="@+id/profileToolBar"
+            android.design:layout_width="match_parent"
+            android.design:layout_height="wrap_content">
+
+            <RelativeLayout
+                android.design:layout_width="match_parent"
+                android.design:layout_height="match_parent">
+
+                <TextView
+                    android.design:layout_width="wrap_content"
+                    android.design:layout_height="match_parent"
+                    android.design:layout_centerVertical="true"
+                    android.design:text="hello.world"
+                    android.design:textColor="#000000"
+                    android.design:textSize="20sp"
+                    android.design:layout_marginStart="15dp"
+                    android.design:id="@+id/profilename"
+                    android.design:layout_marginLeft="15dp" />
+
+                <ImageView
+                    android.design:layout_width="30dp"
+                    android.design:layout_centerVertical="true"
+                    android.design:layout_height="30dp"
+                    android.design:layout_marginEnd="20dp"
+                    android.design:layout_alignParentRight="true"
+                    android.design:layout_marginRight="20dp"
+                    android.design:id="@+id/profileMenu"
+                    android.design:src="@drawable/ic_ellipses"
+
+                    />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+
+    </android.support.design.widget.AppBarLayout>
+
+</merge>
