@@ -1,0 +1,78 @@
+<merge xmlns:android.design="http://schemas.android.com/apk/res/android">
+
+
+    <android.support.design.widget.AppBarLayout
+        android.design:layout_width="match_parent"
+        android.design:layout_height="50dp"
+        android.design:background="@drawable/white_gray_bottom"
+
+        >
+
+        <android.support.v7.widget.Toolbar
+            android.design:id="@+id/profileToolBar"
+            android.design:layout_width="match_parent"
+            android.design:layout_height="wrap_content">
+
+            <RelativeLayout
+                android.design:layout_width="match_parent"
+                android.design:layout_height="match_parent">
+
+
+
+
+                <ImageView
+                    android.design:layout_width="30dp"
+                    android.design:layout_centerVertical="true"
+                    android.design:layout_height="30dp"
+                    android.design:layout_marginEnd="20dp"
+                    android.design:layout_marginRight="20dp"
+                    android.design:id="@+id/imageviewcloseshare"
+                    android.design:src="@drawable/ic_close"
+
+                    />
+               <Spinner
+                   android.design:layout_width="wrap_content"
+                   android.design:layout_height="wrap_content"
+                   android.design:layout_toRightOf="@+id/imageviewcloseshare"
+
+                     android.design:id="@+id/spinnerDir"
+                   android.design:textSize="20sp"
+                   android.design:textColor="#000000"
+                   android.design:text="Gallary"
+                   android.design:layout_centerVertical="true"
+                   android.design:gravity="center_vertical"
+
+
+                   >
+
+
+
+               </Spinner>
+
+                <TextView
+                    android.design:layout_width="wrap_content"
+                    android.design:layout_height="wrap_content"
+                    android.design:text="@string/next"
+                    android.design:layout_alignParentRight="true"
+                    android.design:layout_marginRight="15dp"
+                    android.design:textSize="20sp"
+                    android.design:textColor="#000000"
+                    android.design:layout_centerVertical="true"
+                    android.design:id="@+id/textviewnext"
+
+
+
+                    />
+
+
+
+
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+
+    </android.support.design.widget.AppBarLayout>
+
+</merge>

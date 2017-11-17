@@ -48,10 +48,7 @@ setupActivityWidgets();
                     @Override
                     public void onClick(View v) {
                         Intent intent=new Intent(ProfileActivity.this,AccountSettingsActivity.class);
-
-
-
-
+                        intent.putExtra("calling","profile");
                         startActivity(intent);
 
                     }
@@ -135,16 +132,16 @@ private void setupActivityWidgets(){
 private void tempGridSetup(){
 
     ArrayList<String> imageUrls=new ArrayList<>();
-    imageUrls.add("http://tctechcrunch2011.files.wordpress.com/2012/09/mark.jpeg");
-    imageUrls.add(" http://images.indianexpress.com/2017/04/aamir-khan-7595.jpg?w=759 ");
+    imageUrls.add("http://www.anyfeed.in/wp-content/uploads/2016/07/Bernard-Tomic.jpg");
+    imageUrls.add("http://www.anyfeed.in/wp-content/uploads/2016/05/Karishma-Tanna.jpg");
 
-    imageUrls.add("http://www.anyfeed.in/wp-content/uploads/2016/03/Aamir-Khan.jpg");
-    imageUrls.add(" http://static.koimoi.com/wp-content/new-galleries/2013/11/Aamir-Khan-Wallpaper-2.jpg  ");
+    imageUrls.add("http://www.anyfeed.in/wp-content/uploads/2016/05/Tamannaah-Bhatia.jpg");
+    imageUrls.add("http://www.anyfeed.in/wp-content/uploads/2016/03/Ak-Networks-53.jpg");
 
-    imageUrls.add(" http://www.hindustantimes.com/rf/image_size_960x540/HT/p2/2017/04/06/Pictures/_551965f2-1ac2-11e7-8dd7-d947b0232760.jpg");
-    imageUrls.add("http://blogs-images.forbes.com/dongroves/files/2016/12/Aamir-Khan.jpg ");
-    imageUrls.add("");
-    imageUrls.add("  http://mum-indiacom.s3.ap-south-1.amazonaws.com/imageTopics/9134a8028821f5e2d168c97b1b28e828.jpg ");
+    imageUrls.add("http://www.anyfeed.in/wp-content/uploads/2016/04/Yuvraj-Singh.jpg");
+    imageUrls.add("http://www.anyfeed.in/wp-content/uploads/2016/05/Osman-Khalid-Butt.jpg");
+    imageUrls.add("http://www.anyfeed.in/wp-content/uploads/2016/08/8-Month-Old-First-Week.jpg");
+    imageUrls.add("http://www.anyfeed.in/wp-content/uploads/2016/06/12-3.jpg ");
 
 
     setupImageGrid(imageUrls);
@@ -153,7 +150,6 @@ private void tempGridSetup(){
 
 
 public void setupImageGrid(ArrayList<String> imageUrls){
-
     GridView gridView=findViewById(R.id.gridView);
 
     int gridWidth=getResources().getDisplayMetrics().widthPixels;

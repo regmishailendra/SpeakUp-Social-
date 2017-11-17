@@ -4,4 +4,7 @@
     <string name="sign_out">Sign Out</string>
     <string name="edit_profile_fragment">Edit Profile</string>
     <string name="sign_out_fragment">Sign Out</string>
+    <string name="open_camera">Open camera</string>
+    <string name="next">Next</string>
+    <string name="share">Share</string>
 </resources>

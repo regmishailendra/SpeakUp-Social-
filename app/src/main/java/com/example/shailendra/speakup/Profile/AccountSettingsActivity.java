@@ -1,5 +1,6 @@
 package com.example.shailendra.speakup.Profile;
 
+import android.content.Intent;
 import android.media.Image;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -42,7 +43,14 @@ public class AccountSettingsActivity extends AppCompatActivity {
         setUpBottomNavigation();
 
 
+Intent intent=getIntent();
+if(intent.hasExtra("calling")){
+    setViewPager(adapter.getFragmentNumber(getString(R.string.edit_profile_fragment)));
 
+
+
+
+}
 
 
 

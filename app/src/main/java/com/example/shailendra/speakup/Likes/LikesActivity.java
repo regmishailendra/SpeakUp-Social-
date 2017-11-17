@@ -18,9 +18,9 @@ public class LikesActivity extends AppCompatActivity{
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.activity_main);
         Log.i("meroinsta", "onCreate: like started");
-    //setUpBottomNavigation();
+    setUpBottomNavigation();
 
     }
 
